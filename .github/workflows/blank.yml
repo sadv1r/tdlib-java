@@ -28,5 +28,6 @@ jobs:
           mkdir build
           cd build
           CXXFLAGS="-stdlib=libc++" CC=/usr/bin/clang-10 CXX=/usr/bin/clang++-10 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=../example/java/td -DTD_ENABLE_JNI=ON ..
+          echo "LS"
           ls /home/runner/work/tdlib-java/tdlib-java/td
           cmake --build . --target install
